@@ -1,0 +1,15 @@
+# INSTRUCTIONS FOR THE STUDENT
+# Complete this file with a user prompt template.
+# The template must include variables for:
+# - Demographic information (age, gender, etc.)
+# - Current sleep habits
+# - Problems encountered
+# - Desired goals
+# - Personal preferences
+
+# Use the format {VARIABLE_NAME} for variables that a user should fill in.
+
+# YOUR USER PROMPT TEMPLATE BELOW:
+# ===================================================
+
+[TODO]
