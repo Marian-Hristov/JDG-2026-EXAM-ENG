@@ -4,7 +4,7 @@
 -- Objective: Retrieve the list of users with more than 3 active intervention plans
 -- ============================================================================
 
-SELECT u.*, p.*, ip.*
+SELECT u.*
 FROM users u
 JOIN profiles p ON u.userId = p.userId
 JOIN interventionPlans ip ON p.profileId = ip.profileId
