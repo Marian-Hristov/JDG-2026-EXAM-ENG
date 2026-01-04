@@ -7,4 +7,4 @@
 SELECT ip.*
 FROM profiles p
 JOIN interventionPlans ip ON p.profileId = ip.profileId
-WHERE ip.priority <> 'active' AND p.planId = 30;
+WHERE ip.status <> 'active' AND p.planId = 30;
