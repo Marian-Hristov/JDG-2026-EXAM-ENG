@@ -38,7 +38,14 @@ CREATE TABLE SomniaData.InterventionPlans (
   planId INT AUTO_INCREMENT NOT NULL,
   profileId INT NOT NULL,
   creation TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  priority ENUM('active', 'completed', 'pending') NOT NULL,
+  status ENUM('active', 'completed', 'pending') NOT NULL,
   PRIMARY KEY (planId),
   FOREIGN KEY (profileId) REFERENCES Profiles(profileId)
+);
+
+CREATE TABLE SomniaData.Logs (
+  logId INT AUTO_INCREMENT NOT NULL,
+  action varchar(255) NOT NULL,
+  description TEXT NOT NULL,
+  PRIMARY KEY (logId)
 );
